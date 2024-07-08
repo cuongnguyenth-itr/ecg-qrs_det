@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/huucuong/Windows-SSD/cpp/src/tflite-main.cpp
+tensorflow/lite/interpreter.h
+/media/huucuong/Windows-SSD/cpp/src/tensorflow/lite/interpreter.h
+tensorflow/lite/kernels/register.h
+/media/huucuong/Windows-SSD/cpp/src/tensorflow/lite/kernels/register.h
+tensorflow/lite/model.h
+/media/huucuong/Windows-SSD/cpp/src/tensorflow/lite/model.h
+iostream
+-
+memory
+-
+

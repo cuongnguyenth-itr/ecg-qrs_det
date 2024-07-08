@@ -1,0 +1,13 @@
+# Target labels
+ flatbuffers-flatc
+# Source files and their labels
+/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/flatbuffers-flatc
+/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/flatbuffers-flatc.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/flatbuffers-flatc-complete.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-install.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-mkdir.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-download.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-update.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-patch.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-configure.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-build.rule

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -std=c++14 -O3 -g -O3 -DNDEBUG -shared -Wl,-soname,libecgqrsDet.so -o libecgqrsDet.so CMakeFiles/ecgqrsDet.dir/src/loadingModel.cpp.o  -Wl,-rpath,/media/huucuong/Windows-SSD/cpp/libs/3rdparty/onnxruntime/lib ../3rdparty/onnxruntime/lib/libonnxruntime.so 

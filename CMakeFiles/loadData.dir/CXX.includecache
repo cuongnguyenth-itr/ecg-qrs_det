@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/huucuong/Windows-SSD/cpp/src/loadingData.cpp
+loadingData.h
+-
+
+include/loadingData.h
+iostream
+-
+cnpy.h
+-
+
+libs/common/cnpy.h
+string
+-
+stdexcept
+-
+sstream
+-
+vector
+-
+cstdio
+-
+typeinfo
+-
+iostream
+-
+cassert
+-
+zlib.h
+-
+map
+-
+memory
+-
+stdint.h
+-
+numeric
+-
+

@@ -1,0 +1,14 @@
+# Target labels
+ protobuf-populate
+# Source files and their labels
+/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate
+/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate-complete.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-install.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-mkdir.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-download.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-update.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-patch.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-configure.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-build.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-test.rule

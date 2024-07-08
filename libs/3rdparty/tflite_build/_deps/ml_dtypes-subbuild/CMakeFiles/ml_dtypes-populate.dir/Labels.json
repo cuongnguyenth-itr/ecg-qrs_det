@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/CMakeFiles/ml_dtypes-populate"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/CMakeFiles/ml_dtypes-populate.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/CMakeFiles/ml_dtypes-populate-complete.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-install.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-download.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-update.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-patch.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-configure.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-build.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/ml_dtypes-subbuild/ml_dtypes-populate-prefix/src/ml_dtypes-populate-stamp/ml_dtypes-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"ml_dtypes-populate"
+		],
+		"name" : "ml_dtypes-populate"
+	}
+}

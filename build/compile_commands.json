@@ -1,25 +1,25 @@
 [
 {
   "directory": "/home/huucuong/cpp/build",
-  "command": "/usr/bin/c++   -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include   -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/ecgqrsnew.dir/src/main.cpp.o -c /home/huucuong/cpp/src/main.cpp",
+  "command": "/usr/bin/c++   -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include  -g   -o CMakeFiles/ecgqrsnew.dir/src/main.cpp.o -c /home/huucuong/cpp/src/main.cpp",
   "file": "/home/huucuong/cpp/src/main.cpp"
 },
 
 {
   "directory": "/home/huucuong/cpp/build",
-  "command": "/usr/bin/c++   -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include   -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/loadData.dir/src/loadingData.cpp.o -c /home/huucuong/cpp/src/loadingData.cpp",
+  "command": "/usr/bin/c++  -DloadData_EXPORTS -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include  -g -fPIC   -o CMakeFiles/loadData.dir/src/loadingData.cpp.o -c /home/huucuong/cpp/src/loadingData.cpp",
   "file": "/home/huucuong/cpp/src/loadingData.cpp"
 },
 
 {
   "directory": "/home/huucuong/cpp/build",
-  "command": "/usr/bin/c++   -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include   -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14 -o CMakeFiles/cnpy.dir/libs/common/cnpy.cpp.o -c /home/huucuong/cpp/libs/common/cnpy.cpp",
+  "command": "/usr/bin/c++  -Dcnpy_EXPORTS -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include  -g -fPIC   -o CMakeFiles/cnpy.dir/libs/common/cnpy.cpp.o -c /home/huucuong/cpp/libs/common/cnpy.cpp",
   "file": "/home/huucuong/cpp/libs/common/cnpy.cpp"
 },
 
 {
   "directory": "/home/huucuong/cpp/build",
-  "command": "/usr/bin/c++   -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/ecgqrs -I../libs/libqrs/PUBLIC -I../libs/3rdparty/onnxruntime/include -I../libs/libqrs/ecgqrsDet -I../libs/libqrs/include   -std=c++14 -O3 -g -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14 -o libs/libqrs/CMakeFiles/ecgqrsDet.dir/src/loadingModel.cpp.o -c /home/huucuong/cpp/libs/libqrs/src/loadingModel.cpp",
+  "command": "/usr/bin/c++  -DecgqrsDet_EXPORTS -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/ecgqrsDet -I../libs/libqrs/PUBLIC -I../libs/3rdparty/onnxruntime/include -I../libs/libqrs/include   -std=c++14 -O3 -g -O3 -DNDEBUG -fPIC   -std=gnu++14 -o libs/libqrs/CMakeFiles/ecgqrsDet.dir/src/loadingModel.cpp.o -c /home/huucuong/cpp/libs/libqrs/src/loadingModel.cpp",
   "file": "/home/huucuong/cpp/libs/libqrs/src/loadingModel.cpp"
 }
 ]

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/CMakeFiles/fp16"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/CMakeFiles/fp16.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/CMakeFiles/fp16-complete.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-install.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-mkdir.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-download.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-update.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-patch.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-configure.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-build.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"fp16"
+		],
+		"name" : "fp16"
+	}
+}

@@ -42,6 +42,35 @@ float* qrs_detection::detect(const std::vector<_Float32> &input)
     return results.data();
 }
 
+int8_t* qrs_detection::detect_for_int8(const std::vector<int8_t> &input)
+{
+    // run inference
+    num_samps=input.size()/(inputTensorShape[1]*inputTensorShape[2]);
+    inputShape[0]=num_samps;
+    inputShape[1]=inputTensorShape[1];
+    inputShape[2]=inputTensorShape[2];
+    
+    outputShape[0]=num_samps;
+    outputShape[1]=outputTensorShape[1];
+    
+    std::vector<int8_t> results(num_samps*outputTensorShape[1]);
+    
+    auto memory_info = Ort::MemoryInfo::CreateCpu(OrtDeviceAllocator, OrtMemTypeCPU);
+    auto inputTensor = Ort::Value::CreateTensor<int8_t>(memory_info, (int8_t*)input.data(), input.size(), inputShape.data(), inputShape.size());
+    auto outputTensor = Ort::Value::CreateTensor<int8_t>(memory_info, (int8_t*)results.data(), results.size(), outputShape.data(), outputShape.size());
+    Ort::AllocatorWithDefaultOptions ort_alloc;
+    Ort::AllocatedStringPtr inputName = session.GetInputNameAllocated(0, ort_alloc);
+    Ort::AllocatedStringPtr outputName = session.GetOutputNameAllocated(0, ort_alloc);
+    const std::array<const char*, 1> inputNames = { inputName.get()};
+    const std::array<const char*, 1> outputNames = { outputName.get()};
+
+    inputName.release();
+    outputName.release();
+    session.Run(runOptions, inputNames.data(), &inputTensor, 1, outputNames.data(), &outputTensor, 1);
+
+    return results.data();
+}
+
 // int main() {
 //     // qrs_det->qrs_detection("/home/huucuong/cpp/assets/qrsdet-model.onnx");
 

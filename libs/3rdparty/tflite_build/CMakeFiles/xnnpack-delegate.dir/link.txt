@@ -1,0 +1,2 @@
+/usr/bin/ar qc libxnnpack-delegate.a  CMakeFiles/xnnpack-delegate.dir/delegates/xnnpack/quantization_util.cc.o CMakeFiles/xnnpack-delegate.dir/delegates/xnnpack/weight_cache.cc.o CMakeFiles/xnnpack-delegate.dir/delegates/xnnpack/xnnpack_delegate.cc.o
+/usr/bin/ranlib libxnnpack-delegate.a

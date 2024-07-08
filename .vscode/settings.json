@@ -64,7 +64,20 @@
         "variant": "cpp",
         "bit": "cpp",
         "regex": "cpp",
-        "shared_mutex": "cpp"
+        "shared_mutex": "cpp",
+        "any": "cpp",
+        "hash_map": "cpp",
+        "hash_set": "cpp",
+        "forward_list": "cpp",
+        "*.inc": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "codecvt": "cpp",
+        "filesystem": "cpp",
+        "future": "cpp",
+        "scoped_allocator": "cpp",
+        "valarray": "cpp",
+        "*.ipp": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled"
 }

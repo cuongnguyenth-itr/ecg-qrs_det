@@ -1,0 +1,14 @@
+# Target labels
+ xnnpack-populate
+# Source files and their labels
+/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate
+/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/xnnpack-subbuild/CMakeFiles/xnnpack-populate-complete.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-install.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-mkdir.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-download.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-update.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-patch.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-configure.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-build.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/src/xnnpack-populate-stamp/xnnpack-populate-test.rule

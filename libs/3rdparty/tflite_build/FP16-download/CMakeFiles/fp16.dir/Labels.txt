@@ -1,0 +1,14 @@
+# Target labels
+ fp16
+# Source files and their labels
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/CMakeFiles/fp16
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/CMakeFiles/fp16.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/CMakeFiles/fp16-complete.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-install.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-mkdir.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-download.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-update.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-patch.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-configure.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-build.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FP16-download/fp16-prefix/src/fp16-stamp/fp16-test.rule

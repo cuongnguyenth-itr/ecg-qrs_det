@@ -35,6 +35,17 @@ std::vector<float> data_loader::slice_vector(const std::vector<float>& vec, size
     return std::vector<float>(vec.begin() + start, vec.begin() + end);
 }
 
+std::vector<int8_t> data_loader::slice_vector_int8(const std::vector<int8_t>& vec, size_t start, size_t end) {
+    // Check for valid indices
+    if (start > end || end > vec.size()) {
+        // throw std::out_of_range("Invalid start or end index");
+        end=vec.size();
+    }
+
+    // Create subvector using range constructor
+    return std::vector<int8_t>(vec.begin() + start, vec.begin() + end);
+}
+
 
 // int main(){
 //     data_loader *mydata= new data_loader("/home/huucuong/cpp/assets/data/data_100.npz");

@@ -1,0 +1,8 @@
+/media/huucuong/Windows-SSD/cpp/CMakeFiles/rebuild_cache.dir
+/media/huucuong/Windows-SSD/cpp/CMakeFiles/cnpy.dir
+/media/huucuong/Windows-SSD/cpp/CMakeFiles/loadData.dir
+/media/huucuong/Windows-SSD/cpp/CMakeFiles/ecgqrsnew.dir
+/media/huucuong/Windows-SSD/cpp/CMakeFiles/edit_cache.dir
+/media/huucuong/Windows-SSD/cpp/libs/libqrs/CMakeFiles/rebuild_cache.dir
+/media/huucuong/Windows-SSD/cpp/libs/libqrs/CMakeFiles/edit_cache.dir
+/media/huucuong/Windows-SSD/cpp/libs/libqrs/CMakeFiles/ecgqrsDet.dir

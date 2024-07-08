@@ -1,0 +1,133 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ccfd7/fast && /usr/bin/make -f CMakeFiles/cmTC_ccfd7.dir/build.make CMakeFiles/cmTC_ccfd7.dir/build
+make[1]: Entering directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ccfd7.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_ccfd7.dir/src.c.o   -c /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_ccfd7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccfd7.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_ccfd7.dir/src.c.o  -o cmTC_ccfd7 
+/usr/bin/ld: CMakeFiles/cmTC_ccfd7.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_ccfd7.dir/build.make:87: cmTC_ccfd7] Error 1
+make[1]: Leaving directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ccfd7/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_86cef/fast && /usr/bin/make -f CMakeFiles/cmTC_86cef.dir/build.make CMakeFiles/cmTC_86cef.dir/build
+make[1]: Entering directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_86cef.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_86cef.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_86cef
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86cef.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_86cef.dir/CheckFunctionExists.c.o  -o cmTC_86cef  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_86cef.dir/build.make:87: cmTC_86cef] Error 1
+make[1]: Leaving directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_86cef/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wshorten64to32 failed with the following output:
+Change Dir: /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_21273/fast && /usr/bin/make -f CMakeFiles/cmTC_21273.dir/build.make CMakeFiles/cmTC_21273.dir/build
+make[1]: Entering directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21273.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -DCOMPILER_SUPPORT_Wshorten64to32 -Werror -fPIE   -Wshorten-64-to-32 -std=gnu++17 -o CMakeFiles/cmTC_21273.dir/src.cxx.o -c /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wshorten-64-to-32'
+make[1]: *** [CMakeFiles/cmTC_21273.dir/build.make:66: CMakeFiles/cmTC_21273.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_21273/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wenumconversion failed with the following output:
+Change Dir: /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0ad66/fast && /usr/bin/make -f CMakeFiles/cmTC_0ad66.dir/build.make CMakeFiles/cmTC_0ad66.dir/build
+make[1]: Entering directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0ad66.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wenumconversion -Werror -fPIE   -Wenum-conversion -std=gnu++17 -o CMakeFiles/cmTC_0ad66.dir/src.cxx.o -c /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wenum-conversion'; did you mean '-Wno-conversion'?
+make[1]: *** [CMakeFiles/cmTC_0ad66.dir/build.make:66: CMakeFiles/cmTC_0ad66.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0ad66/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_Wcpp11extensions failed with the following output:
+Change Dir: /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9970d/fast && /usr/bin/make -f CMakeFiles/cmTC_9970d.dir/build.make CMakeFiles/cmTC_9970d.dir/build
+make[1]: Entering directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9970d.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -DCOMPILER_SUPPORT_Wcpp11extensions -Werror -fPIE   -Wc++11-extensions -std=gnu++17 -o CMakeFiles/cmTC_9970d.dir/src.cxx.o -c /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-Wc++11-extensions'; did you mean '-fms-extensions'?
+make[1]: *** [CMakeFiles/cmTC_9970d.dir/build.make:66: CMakeFiles/cmTC_9970d.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9970d/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd981 failed with the following output:
+Change Dir: /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a1eaa/fast && /usr/bin/make -f CMakeFiles/cmTC_a1eaa.dir/build.make CMakeFiles/cmTC_a1eaa.dir/build
+make[1]: Entering directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a1eaa.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd981 -Werror -fPIE   -wd981 -std=gnu++17 -o CMakeFiles/cmTC_a1eaa.dir/src.cxx.o -c /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd981'
+make[1]: *** [CMakeFiles/cmTC_a1eaa.dir/build.make:66: CMakeFiles/cmTC_a1eaa.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a1eaa/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_SUPPORT_wd2304 failed with the following output:
+Change Dir: /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d0675/fast && /usr/bin/make -f CMakeFiles/cmTC_d0675.dir/build.make CMakeFiles/cmTC_d0675.dir/build
+make[1]: Entering directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d0675.dir/src.cxx.o
+/usr/bin/c++    -pedantic -Wall -Wextra -Wundef -Wcast-align -Wchar-subscripts -Wnon-virtual-dtor -Wunused-local-typedefs -Wpointer-arith -Wwrite-strings -Wformat-security -Wlogical-op -Wdouble-promotion -Wshadow -Wno-psabi -Wno-variadic-macros -Wno-long-long -fno-check-new -fno-common -fstrict-aliasing -DCOMPILER_SUPPORT_wd2304 -Werror -fPIE   -wd2304 -std=gnu++17 -o CMakeFiles/cmTC_d0675.dir/src.cxx.o -c /home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp/src.cxx
+c++: error: unrecognized command line option '-wd2304'
+make[1]: *** [CMakeFiles/cmTC_d0675.dir/build.make:66: CMakeFiles/cmTC_d0675.dir/src.cxx.o] Error 1
+make[1]: Leaving directory '/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_d0675/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }

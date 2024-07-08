@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/_deps/protobuf-subbuild/CMakeFiles/protobuf-populate-complete.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-install.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-download.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-update.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-patch.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-configure.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-build.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/src/protobuf-populate-stamp/protobuf-populate-test.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"protobuf-populate"
+		],
+		"name" : "protobuf-populate"
+	}
+}

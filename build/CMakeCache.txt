@@ -229,6 +229,9 @@ ecgqrsDet_SOURCE_DIR:STATIC=/home/huucuong/cpp/libs/libqrs
 //Value Computed by CMake
 ecgqrsnew_BINARY_DIR:STATIC=/home/huucuong/cpp/build
 
+//Dependencies for the target
+ecgqrsnew_LIB_DEPENDS:STATIC=general;ecgqrsDet;general;loadData;
+
 //Value Computed by CMake
 ecgqrsnew_SOURCE_DIR:STATIC=/home/huucuong/cpp
 

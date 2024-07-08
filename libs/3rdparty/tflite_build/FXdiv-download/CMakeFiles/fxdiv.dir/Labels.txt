@@ -1,0 +1,14 @@
+# Target labels
+ fxdiv
+# Source files and their labels
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/CMakeFiles/fxdiv
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/CMakeFiles/fxdiv.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/CMakeFiles/fxdiv-complete.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-install.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-mkdir.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-download.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-update.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-patch.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-configure.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-build.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/FXdiv-download/fxdiv-prefix/src/fxdiv-stamp/fxdiv-test.rule

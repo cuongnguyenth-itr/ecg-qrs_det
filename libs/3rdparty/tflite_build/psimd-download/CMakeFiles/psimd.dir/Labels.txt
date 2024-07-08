@@ -1,0 +1,14 @@
+# Target labels
+ psimd
+# Source files and their labels
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/CMakeFiles/psimd
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/CMakeFiles/psimd.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/CMakeFiles/psimd-complete.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-install.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-mkdir.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-download.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-update.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-patch.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-configure.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-build.rule
+/home/huucuong/cpp/libs/3rdparty/tflite_build/psimd-download/psimd-prefix/src/psimd-stamp/psimd-test.rule

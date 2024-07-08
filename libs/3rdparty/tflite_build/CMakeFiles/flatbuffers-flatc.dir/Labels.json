@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/flatbuffers-flatc"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/flatbuffers-flatc.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/CMakeFiles/flatbuffers-flatc-complete.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-install.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-mkdir.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-download.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-update.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-patch.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-configure.rule"
+		},
+		{
+			"file" : "/home/huucuong/cpp/libs/3rdparty/tflite_build/flatbuffers-flatc/src/flatbuffers-flatc-stamp/flatbuffers-flatc-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"flatbuffers-flatc"
+		],
+		"name" : "flatbuffers-flatc"
+	}
+}

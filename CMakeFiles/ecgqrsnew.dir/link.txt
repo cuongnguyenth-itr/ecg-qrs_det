@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/ecgqrsnew.dir/src/main.cpp.o -o ecgqrsnew  -Wl,-rpath,/media/huucuong/Windows-SSD/cpp/libs/libqrs:/media/huucuong/Windows-SSD/cpp:/media/huucuong/Windows-SSD/cpp/libs/3rdparty/onnxruntime/lib libs/libqrs/libecgqrsDet.so libloadData.so libs/3rdparty/onnxruntime/lib/libonnxruntime.so libcnpy.so /usr/lib/x86_64-linux-gnu/libz.so 

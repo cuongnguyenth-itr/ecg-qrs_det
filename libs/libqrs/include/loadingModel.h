@@ -10,6 +10,7 @@ public:
     qrs_detection(const char* model_path);
     ~qrs_detection(){};
     float* detect(const std::vector<_Float32> &input);
+    int8_t* detect_for_int8(const std::vector<int8_t> &input);
 
 
 private:

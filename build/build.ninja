@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: ecgqrsnew
-# Configuration: Release
+# Configuration: Debug
 # =============================================================================
 
 #############################################
@@ -51,7 +51,7 @@ build cmake_object_order_depends_target_ecgqrsnew: phony || cmake_object_order_d
 
 build CMakeFiles/ecgqrsnew.dir/src/main.cpp.o: CXX_COMPILER__ecgqrsnew ../src/main.cpp || cmake_object_order_depends_target_ecgqrsnew
   DEP_FILE = CMakeFiles/ecgqrsnew.dir/src/main.cpp.o.d
-  FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14
+  FLAGS = -g
   INCLUDES = -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include
   OBJECT_DIR = CMakeFiles/ecgqrsnew.dir
   OBJECT_FILE_DIR = CMakeFiles/ecgqrsnew.dir/src
@@ -64,9 +64,9 @@ build CMakeFiles/ecgqrsnew.dir/src/main.cpp.o: CXX_COMPILER__ecgqrsnew ../src/ma
 #############################################
 # Link the executable ecgqrsnew
 
-build ecgqrsnew: CXX_EXECUTABLE_LINKER__ecgqrsnew CMakeFiles/ecgqrsnew.dir/src/main.cpp.o | libs/libqrs/libecgqrsDet.a libloadData.a ../libs/3rdparty/onnxruntime/lib/libonnxruntime.so libcnpy.a /usr/lib/x86_64-linux-gnu/libz.so || libcnpy.a libloadData.a libs/libqrs/libecgqrsDet.a
-  FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG
-  LINK_LIBRARIES = -Wl,-rpath,/home/huucuong/cpp/libs/3rdparty/onnxruntime/lib  libs/libqrs/libecgqrsDet.a  libloadData.a  ../libs/3rdparty/onnxruntime/lib/libonnxruntime.so  libcnpy.a  /usr/lib/x86_64-linux-gnu/libz.so
+build ecgqrsnew: CXX_EXECUTABLE_LINKER__ecgqrsnew CMakeFiles/ecgqrsnew.dir/src/main.cpp.o | libs/libqrs/libecgqrsDet.so libloadData.so ../libs/3rdparty/onnxruntime/lib/libonnxruntime.so libcnpy.so /usr/lib/x86_64-linux-gnu/libz.so || libcnpy.so libloadData.so libs/libqrs/libecgqrsDet.so
+  FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/huucuong/cpp/build/libs/libqrs:/home/huucuong/cpp/build:/home/huucuong/cpp/libs/3rdparty/onnxruntime/lib  libs/libqrs/libecgqrsDet.so  libloadData.so  ../libs/3rdparty/onnxruntime/lib/libonnxruntime.so  libcnpy.so  /usr/lib/x86_64-linux-gnu/libz.so
   OBJECT_DIR = CMakeFiles/ecgqrsnew.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -74,7 +74,7 @@ build ecgqrsnew: CXX_EXECUTABLE_LINKER__ecgqrsnew CMakeFiles/ecgqrsnew.dir/src/m
   TARGET_PDB = ecgqrsnew.dbg
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target loadData
+# Object build statements for SHARED_LIBRARY target loadData
 
 
 #############################################
@@ -83,27 +83,31 @@ build ecgqrsnew: CXX_EXECUTABLE_LINKER__ecgqrsnew CMakeFiles/ecgqrsnew.dir/src/m
 build cmake_object_order_depends_target_loadData: phony || cmake_object_order_depends_target_cnpy
 
 build CMakeFiles/loadData.dir/src/loadingData.cpp.o: CXX_COMPILER__loadData ../src/loadingData.cpp || cmake_object_order_depends_target_loadData
+  DEFINES = -DloadData_EXPORTS
   DEP_FILE = CMakeFiles/loadData.dir/src/loadingData.cpp.o.d
-  FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14
+  FLAGS = -g -fPIC
   INCLUDES = -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include
   OBJECT_DIR = CMakeFiles/loadData.dir
   OBJECT_FILE_DIR = CMakeFiles/loadData.dir/src
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target loadData
+# Link build statements for SHARED_LIBRARY target loadData
 
 
 #############################################
-# Link the static library libloadData.a
+# Link the shared library libloadData.so
 
-build libloadData.a: CXX_STATIC_LIBRARY_LINKER__loadData CMakeFiles/loadData.dir/src/loadingData.cpp.o || libcnpy.a
-  LANGUAGE_COMPILE_FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG
+build libloadData.so: CXX_SHARED_LIBRARY_LINKER__loadData CMakeFiles/loadData.dir/src/loadingData.cpp.o | libcnpy.so /usr/lib/x86_64-linux-gnu/libz.so || libcnpy.so
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = -Wl,-rpath,/home/huucuong/cpp/build  libcnpy.so  /usr/lib/x86_64-linux-gnu/libz.so
   OBJECT_DIR = CMakeFiles/loadData.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libloadData.a
-  TARGET_PDB = loadData.a.dbg
+  SONAME = libloadData.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = libloadData.so
+  TARGET_PDB = loadData.so.dbg
 
 
 #############################################
@@ -118,7 +122,7 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target cnpy
+# Object build statements for SHARED_LIBRARY target cnpy
 
 
 #############################################
@@ -127,27 +131,31 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 build cmake_object_order_depends_target_cnpy: phony || CMakeFiles/cnpy.dir
 
 build CMakeFiles/cnpy.dir/libs/common/cnpy.cpp.o: CXX_COMPILER__cnpy ../libs/common/cnpy.cpp || cmake_object_order_depends_target_cnpy
+  DEFINES = -Dcnpy_EXPORTS
   DEP_FILE = CMakeFiles/cnpy.dir/libs/common/cnpy.cpp.o.d
-  FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14
+  FLAGS = -g -fPIC
   INCLUDES = -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/include -I../libs/3rdparty/onnxruntime/include
   OBJECT_DIR = CMakeFiles/cnpy.dir
   OBJECT_FILE_DIR = CMakeFiles/cnpy.dir/libs/common
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target cnpy
+# Link build statements for SHARED_LIBRARY target cnpy
 
 
 #############################################
-# Link the static library libcnpy.a
+# Link the shared library libcnpy.so
 
-build libcnpy.a: CXX_STATIC_LIBRARY_LINKER__cnpy CMakeFiles/cnpy.dir/libs/common/cnpy.cpp.o
-  LANGUAGE_COMPILE_FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG
+build libcnpy.so: CXX_SHARED_LIBRARY_LINKER__cnpy CMakeFiles/cnpy.dir/libs/common/cnpy.cpp.o | /usr/lib/x86_64-linux-gnu/libz.so
+  LANGUAGE_COMPILE_FLAGS = -g
+  LINK_LIBRARIES = /usr/lib/x86_64-linux-gnu/libz.so
   OBJECT_DIR = CMakeFiles/cnpy.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libcnpy.a
-  TARGET_PDB = cnpy.a.dbg
+  SONAME = libcnpy.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = libcnpy.so
+  TARGET_PDB = cnpy.so.dbg
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
@@ -178,7 +186,7 @@ build libs/libqrs/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
 build libs/libqrs/edit_cache: phony libs/libqrs/CMakeFiles/edit_cache.util
 
 # =============================================================================
-# Object build statements for STATIC_LIBRARY target ecgqrsDet
+# Object build statements for SHARED_LIBRARY target ecgqrsDet
 
 
 #############################################
@@ -187,38 +195,42 @@ build libs/libqrs/edit_cache: phony libs/libqrs/CMakeFiles/edit_cache.util
 build cmake_object_order_depends_target_ecgqrsDet: phony || libs/libqrs/CMakeFiles/ecgqrsDet.dir
 
 build libs/libqrs/CMakeFiles/ecgqrsDet.dir/src/loadingModel.cpp.o: CXX_COMPILER__ecgqrsDet ../libs/libqrs/src/loadingModel.cpp || cmake_object_order_depends_target_ecgqrsDet
+  DEFINES = -DecgqrsDet_EXPORTS
   DEP_FILE = libs/libqrs/CMakeFiles/ecgqrsDet.dir/src/loadingModel.cpp.o.d
-  FLAGS = -std=c++14 -O3 -g -std=c++14 -O3 -g -O3 -DNDEBUG   -std=gnu++14
-  INCLUDES = -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/ecgqrs -I../libs/libqrs/PUBLIC -I../libs/3rdparty/onnxruntime/include -I../libs/libqrs/ecgqrsDet -I../libs/libqrs/include
+  FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG -fPIC   -std=gnu++14
+  INCLUDES = -I../include -I../ecgqrsnew -I../PRIVATE -I../libs/common -I../libs/libqrs/ecgqrsDet -I../libs/libqrs/PUBLIC -I../libs/3rdparty/onnxruntime/include -I../libs/libqrs/include
   OBJECT_DIR = libs/libqrs/CMakeFiles/ecgqrsDet.dir
   OBJECT_FILE_DIR = libs/libqrs/CMakeFiles/ecgqrsDet.dir/src
 
 
 # =============================================================================
-# Link build statements for STATIC_LIBRARY target ecgqrsDet
+# Link build statements for SHARED_LIBRARY target ecgqrsDet
 
 
 #############################################
-# Link the static library libs/libqrs/libecgqrsDet.a
+# Link the shared library libs/libqrs/libecgqrsDet.so
 
-build libs/libqrs/libecgqrsDet.a: CXX_STATIC_LIBRARY_LINKER__ecgqrsDet libs/libqrs/CMakeFiles/ecgqrsDet.dir/src/loadingModel.cpp.o || ../libs/3rdparty/onnxruntime/lib/libonnxruntime.so
-  LANGUAGE_COMPILE_FLAGS = -std=c++14 -O3 -g -std=c++14 -O3 -g -O3 -DNDEBUG
+build libs/libqrs/libecgqrsDet.so: CXX_SHARED_LIBRARY_LINKER__ecgqrsDet libs/libqrs/CMakeFiles/ecgqrsDet.dir/src/loadingModel.cpp.o | ../libs/3rdparty/onnxruntime/lib/libonnxruntime.so
+  LANGUAGE_COMPILE_FLAGS = -std=c++14 -O3 -g -O3 -DNDEBUG
+  LINK_LIBRARIES = -Wl,-rpath,/home/huucuong/cpp/libs/3rdparty/onnxruntime/lib  ../libs/3rdparty/onnxruntime/lib/libonnxruntime.so
   OBJECT_DIR = libs/libqrs/CMakeFiles/ecgqrsDet.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = libs/libqrs/libecgqrsDet.a
-  TARGET_PDB = ecgqrsDet.a.dbg
+  SONAME = libecgqrsDet.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = libs/libqrs/libecgqrsDet.so
+  TARGET_PDB = ecgqrsDet.so.dbg
 
 # =============================================================================
 # Target aliases.
 
-build cnpy: phony libcnpy.a
+build cnpy: phony libcnpy.so
 
-build ecgqrsDet: phony libs/libqrs/libecgqrsDet.a
+build ecgqrsDet: phony libs/libqrs/libecgqrsDet.so
 
-build libecgqrsDet.a: phony libs/libqrs/libecgqrsDet.a
+build libecgqrsDet.so: phony libs/libqrs/libecgqrsDet.so
 
-build loadData: phony libloadData.a
+build loadData: phony libloadData.so
 
 # =============================================================================
 # Folder targets.
@@ -228,14 +240,14 @@ build loadData: phony libloadData.a
 #############################################
 # Folder: /home/huucuong/cpp/build
 
-build all: phony ecgqrsnew libloadData.a libcnpy.a libs/libqrs/all
+build all: phony ecgqrsnew libloadData.so libcnpy.so libs/libqrs/all
 
 # =============================================================================
 
 #############################################
 # Folder: /home/huucuong/cpp/build/libs/libqrs
 
-build libs/libqrs/all: phony libs/libqrs/libecgqrsDet.a
+build libs/libqrs/all: phony libs/libqrs/libecgqrsDet.so
 
 # =============================================================================
 # Built-in targets
