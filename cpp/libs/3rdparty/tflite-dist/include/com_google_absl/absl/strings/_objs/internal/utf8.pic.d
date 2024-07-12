@@ -1,0 +1,32 @@
+bazel-out/arm64-v8a-opt/bin/external/com_google_absl/absl/strings/_objs/internal/utf8.pic.o: \
+  external/com_google_absl/absl/strings/internal/utf8.cc \
+  external/com_google_absl/absl/strings/internal/utf8.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/cstddef \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/__config \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/features.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/sys/cdefs.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/versioning.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/api-level.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/get_device_api_level_inlines.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/android/ndk-version.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/pthread.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/version \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include/stddef.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include/__stddef_max_align_t.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/__nullptr \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/cstdint \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/stdint.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include/stdint.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/stdint.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/wchar_limits.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/stddef.h \
+  external/com_google_absl/absl/base/config.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/limits.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include/limits.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/limits.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/c++/v1/float.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/14.0.6/include/float.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/linux/limits.h \
+  external/androidndk/toolchains/llvm/prebuilt/linux-x86_64/bin/../sysroot/usr/include/bits/posix_limits.h \
+  external/com_google_absl/absl/base/options.h \
+  external/com_google_absl/absl/base/policy_checks.h

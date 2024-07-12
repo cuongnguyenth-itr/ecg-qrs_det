@@ -1,0 +1,5 @@
+/media/huucuong/Windows-SSD/cpp/libs/libqrs-tflite/CMakeFiles/rebuild_cache.dir
+/media/huucuong/Windows-SSD/cpp/libs/libqrs-tflite/CMakeFiles/cnpy.dir
+/media/huucuong/Windows-SSD/cpp/libs/libqrs-tflite/CMakeFiles/loadData.dir
+/media/huucuong/Windows-SSD/cpp/libs/libqrs-tflite/CMakeFiles/ecgqrsDet.dir
+/media/huucuong/Windows-SSD/cpp/libs/libqrs-tflite/CMakeFiles/edit_cache.dir
